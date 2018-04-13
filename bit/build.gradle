@@ -7,13 +7,16 @@ sourceCompatibility = 1.8
 
 repositories {
     repositories {
-        maven{ url 'http://maven.oschina.net/content/groups/public/'}
+        maven {
+            name "aliyunmaven"
+            url "http://maven.aliyun.com/nexus/content/groups/public/"
+        }
     }
 }
 
 dependencies {
-    testCompile group: 'org.openjdk.jmh',name: 'jmh-core',version: '1.20'
-    testCompile group: 'org.openjdk.jmh',name: 'jmh-generator-annprocess',version: '1.20'
+    testCompile group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.20'
+    testCompile group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.20'
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
